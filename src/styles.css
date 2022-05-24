@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap');
+
+
+
+nav {
+
+  background-color: #002e33;
+  height: 69px;
+  display: block;
+  /* vertical-align: baseline; */
+}
+.one {
+  background-color: yellow;
+}
+.nav-link {
+  font-family: 'Ubuntu', sans-serif;
+  list-style: none;
+  color: #d9f6ef;
+}
+
+body {
+  background-color: #d9f6ef;
+}
+
+footer {
+  background-color: #f2e8e3;
+}
