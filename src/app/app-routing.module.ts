@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AccountCreatorComponent } from './account-creator/account-creator.component';
 import { AdministratorComponent } from './dashboard/administrator/administrator.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 import { DoctorComponent } from './dashboard/doctor/doctor.component';
 import { NurseComponent } from './dashboard/nurse/nurse.component';
 import { PatientComponent } from './dashboard/patient/patient.component';
@@ -19,7 +20,8 @@ const routes: Routes = [
   { path: 'patient', component: PatientComponent },
   { path: 'pharmacist', component: PharmacistComponent },
   { path: 'receptionist', component: ReceptionistComponent },
-  { path: 'administrotr', component: AdministratorComponent }
+  { path: 'administrotr', component: AdministratorComponent },
+  { path: 'dashboard', component: DashboardComponent }
 ];
 
 @NgModule({
