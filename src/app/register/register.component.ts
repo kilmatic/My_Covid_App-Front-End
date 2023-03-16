@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 import { AuthService } from '../services/auth.service';
 
 @Component({
@@ -9,9 +9,9 @@ import { AuthService } from '../services/auth.service';
 })
 export class RegisterComponent implements OnInit {
 
-  registerForm: FormGroup;
+  registerForm: UntypedFormGroup;
 
-  constructor(private _formBuilder: FormBuilder, private authService: AuthService) {
+  constructor(private _formBuilder: UntypedFormBuilder, private authService: AuthService) {
     this.registerForm = this._formBuilder.group({
       'username': [''],
       'email': [''],

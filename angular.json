@@ -102,5 +102,7 @@
       }
     }
   },
-  "defaultProject": "My_Covid_App"
+  "cli": {
+    "analytics": false
+  }
 }
