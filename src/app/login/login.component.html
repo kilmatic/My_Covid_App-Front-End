@@ -20,24 +20,24 @@
     <div class="mt-10 px-12 sm:px-24 md:px-48 lg:px-12 lg:mt-16 xl:max-w-2xl">
       <h2 class="text-center text-4xl text-indigo-900 font-display font-semibold lg:text-left xl:text-5xl">Login</h2>
       <div class="mt-12">
-        <form action="">
+        <form [formGroup]="loginForm" (ngSubmit)="login()">
           <div>
             <div class="text-sm font-bold text-gray-700 tracking-wide">Email</div>
-            <input type="" class="w-full text-lg py-2 border-b border-gray-300 focus:outline-none focus:border-indigo-500" placeholder="example@email.com">
+            <input formControlName="username" type="" class="w-full text-lg py-2 border-b border-gray-300 focus:outline-none focus:border-indigo-500" placeholder="example@email.com">
           </div>
           <div class="mt-8">
             <div class="flex justify-between items-center">
               <div class="text-sm font-bold text-gray-700 tracking-wide">Password</div>
               <a href="" class="text-xs font-display font-semibold text-indigo-600 hover:text-indigo-800 cursor-pointer">Forgot Password</a>
             </div>
-            <input type="" class="w-full text-lg py-2 border-b border-gray-300 focus:outline-none focus:border-indigo-500" placeholder="Enter your password">
+            <input formControlName="password" type="" class="w-full text-lg py-2 border-b border-gray-300 focus:outline-none focus:border-indigo-500" placeholder="Enter your password">
           </div>   
           <div class="mt-10">
             <button class="bg-indigo-500 text-gray-100 p-4 w-full rounded-full tracking-wide font-semibold font-display focus:outline-none hover:bg-indigo-600 shadow-lg">Log In</button>
           </div>
         </form>
         <div class="mt-12 text-sm font-display font-semibold text-gray-700 text-center">
-          Don't have an account? <a href="" class="curosr-point text-indigo-600 hover:text-indigo-800">Create an account</a>
+          Don't have an account? <a routerLink="register" class="curosr-point text-indigo-600 hover:text-indigo-800">Create an account</a>
         </div>
       </div>
     </div>
@@ -79,3 +79,44 @@
     </div>
   </div>
 </div>
+
+
+<!-- <div>
+  <div class="container">
+    <div class="row">
+      <div class="card col-md-5">
+        <div class="card-body">
+          <img >
+          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+        </div>
+      </div>
+      <div class="card col-md-5">
+        <div class="card-body">
+          <img >
+          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Username</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="username">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" formControlName="password">
+      </div>
+      <button type="submit" class="btn btn-primary">Login</button>
+      <div class="mb-3">
+        <a routerLink="register">Create an account</a>
+      </div>
+    </form>
+  </div>
+</div> -->
+<!-- Footer -->
+<!-- <div class="container-fluid text-center footer">
+  <p>Coded with &hearts; by <a href="https://github.com/kilmatic">Kil'matic</a></p>
+</div> -->
