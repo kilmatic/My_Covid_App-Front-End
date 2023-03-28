@@ -23,25 +23,25 @@
         <form [formGroup]="registerForm" (ngSubmit)="register()">
           <div class="mt-8">
             <div>
-              <div class="text-sm font-bold text-gray-700 tracking-wide">Username</div>
+              <div class="text-sm font-bold text-gray-700 tracking-wide" formControlName="username">Username</div>
               <input formControlName="username" type="" class="w-full text-lg py-2 border-b border-gray-300 focus:outline-none focus:border-indigo-500" placeholder="Enter a username to login with">
             </div>
           </div>
           <div class="mt-8">
             <div>
-              <div class="text-sm font-bold text-gray-700 tracking-wide">Email</div>
+              <div class="text-sm font-bold text-gray-700 tracking-wide" formControlName="email">Email</div>
               <input formControlName="email" type="" class="w-full text-lg py-2 border-b border-gray-300 focus:outline-none focus:border-indigo-500" placeholder="example@email.com">
             </div>
           </div>
           <div class="mt-8">
             <div class="flex justify-between items-center">
-              <div class="text-sm font-bold text-gray-700 tracking-wide">Password</div>
+              <div class="text-sm font-bold text-gray-700 tracking-wide" formControlName="password">Password</div>
             </div>
             <input formControlName="password" type="" class="w-full text-lg py-2 border-b border-gray-300 focus:outline-none focus:border-indigo-500" placeholder="Enter your password">
           </div> 
           <div class="mt-8">
             <div class="flex justify-between items-center">
-              <div class="text-sm font-bold text-gray-700 tracking-wide">Confirm Password</div>
+              <div class="text-sm font-bold text-gray-700 tracking-wide" formControlName="confirmpassword">Confirm Password</div>
             </div>
             <input formControlName="password" type="" class="w-full text-lg py-2 border-b border-gray-300 focus:outline-none focus:border-indigo-500" placeholder="Enter your password again">
           </div>   
