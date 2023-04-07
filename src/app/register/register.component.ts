@@ -16,7 +16,8 @@ export class RegisterComponent implements OnInit {
     this.registerForm = this._formBuilder.group({
       'username': [''],
       'email': [''],
-      'password': ['']
+      'password': [''],
+      'confirmpassword': ['']
     });
    }
 
@@ -24,10 +25,12 @@ export class RegisterComponent implements OnInit {
   }
 
   register(){
-    this.authService.register(this.registerForm.value).subscribe(data => {
-      console.log(data);
-      this.router.navigate(["login"]);
-    });
+    if(this._formBuilder.control('confirmpassword') === this._formBuilder.control('password')){
+      this.authService.register(this.registerForm.value).subscribe(data => {
+        console.log(data);
+        this.router.navigate(["login"]);
+      });
+    }
   }
 
 }
