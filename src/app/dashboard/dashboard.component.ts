@@ -30,10 +30,6 @@ export class DashboardComponent implements OnInit {
    }
 
   ngOnInit(): void {
-    // if(this.sidebar.classList.contains('-translate-x-48')){
-      this.sidebar = document.querySelector('aside')!;
-      console.log(this.sidebar.classList);
-    // }
   }
 
   openNav() {
