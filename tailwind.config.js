@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{html,ts}'],
+  content: ['./src/**/*.{html,ts,css}'],
   theme: {
     extend: {},
   },
@@ -10,5 +10,5 @@ module.exports = {
     require('@tailwindcss/line-clamp'),
     require('@tailwindcss/typography')
   ],
-  purge: ['./src/**/*.{html,ts}'],
+  purge: ['./src/**/*.{html,ts,css}'],
 };
